@@ -8,19 +8,20 @@ import {
   Home,
   ResultContainer,
   ShapePage,
+  ThankYou,
 } from "../pages";
 
 const AppRoute = () => {
   const [flavor, setFlavor] = useState("");
-  const [color, setColor] = useState("");
+  const [color, setColor] = useState("#fff000");
   const [shapes, setShapes] = useState([]); // Store multiple shapes
   const [container, setContainer] = useState([]);
   return (
     <Router>
       <Routes>
         <Route path="/" index element={<Home />} />
-        <Route path="/color" element={<ColorPage setColor={setColor} />} />
-        <Route path="/flavor" element={<FlavorPage setFlavor={setFlavor} />} />
+        <Route path="/color" element={<ColorPage color={color} setColor={setColor} />} />
+        <Route path="/flavor" element={<FlavorPage flavor={flavor} setFlavor={setFlavor} />} />
         <Route path="/shape" element={<ShapePage setShapes={setShapes} />} />
         <Route
           path="/container"
@@ -37,6 +38,7 @@ const AppRoute = () => {
             />
           }
         />
+        <Route path="/thankyou" element={<ThankYou />} />
       </Routes>
     </Router>
   );

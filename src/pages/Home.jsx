@@ -13,7 +13,7 @@ const Home = () => {
 
   return (
     <section className="min-h-screen bg-black">
-      <div className="w-[50%] mx-auto flex flex-col items-center">
+      <div className="lg:w-[50%] mx-auto flex flex-col items-center">
         
           <div className="min-h-screen flex items-center justify-center bg-black text-white">
             {!hasAccepted ? (

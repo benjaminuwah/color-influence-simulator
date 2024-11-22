@@ -49,7 +49,7 @@ const FlavorPage = ({ setFlavor }) => {
       <button
         onClick={handleNext}
         disabled={!selectedFlavor}
-        className={`mt-4 px-4 py-2 rounded ${
+        className={`mt-4 px-10 py-4 rounded ${
           selectedFlavor
             ? "bg-cyan-500 hover:bg-green-700 text-white py-4 px-20 rounded-full"
             : "bg-gray-500 text-gray-300 cursor-not-allowed py-4 px-20 rounded-full"

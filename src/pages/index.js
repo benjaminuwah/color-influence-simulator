@@ -4,8 +4,10 @@ import FlavorPage from "./FlavorPage";
 import Home from "./Home";
 import ResultContainer from "./ResultContainer";
 import ShapePage from "./ShapePage";
+import ThankYou from "./ThankYou";
+
 
 export {
-    ColorPage, ContainerPage, FlavorPage, Home, ResultContainer, ShapePage
+    ColorPage, ContainerPage, FlavorPage, Home, ResultContainer, ShapePage, ThankYou
 };
 
