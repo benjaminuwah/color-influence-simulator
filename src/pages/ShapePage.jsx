@@ -102,8 +102,9 @@
 
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { swirlingLogo } from "../assets";
 
-const shapes = ["Circle", "Square", "Triangle"];
+const shapes = ["Circle", "Square", "Triangle", "Line"];
 
 const ShapeSelector = () => {
   const [selectedShape, setSelectedShape] = useState(null);
@@ -111,8 +112,8 @@ const ShapeSelector = () => {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+      <img src={swirlingLogo} width={100} alt="Logo" className="rounded-xl" />
       <h1 className="text-2xl font-bold mb-4">Choose a Shape</h1>
-
       {/* Shape Buttons */}
       <div className="flex space-x-4">
         {shapes.map((shape, index) => (
@@ -129,9 +130,8 @@ const ShapeSelector = () => {
           </button>
         ))}
       </div>
-
       {/* Container with Shape */}
-      <div className="mt-8 flex items-center justify-center w-64 h-64 bg-gray-800 rounded-md">
+      <div className="mt-8 flex items-center justify-center p-10 bg-gray-800 rounded-md">
         {selectedShape ? (
           <div className="flex justify-center items-center">
             {selectedShape === "Circle" && (
@@ -151,7 +151,6 @@ const ShapeSelector = () => {
           <p className="text-gray-400">No shape selected</p>
         )}
       </div>
-
       {/* Next Button */}
       <button
         className="mt-8 px-6 py-3 bg-green-600 text-white rounded hover:bg-green-700 disabled:opacity-50 disabled:cursor-not-allowed"
