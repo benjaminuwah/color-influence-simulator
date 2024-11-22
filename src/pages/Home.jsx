@@ -40,7 +40,7 @@ const Home = () => {
                 <button
                   onClick={handleAccept}
                   disabled={!isChecked} // Disable button unless checkbox is checked
-                  className={`w-2/6 px-4 py-3 rounded-lg text-black ${
+                  className={`w-3/6 px-4 py-3 rounded-lg text-black ${
                     isChecked
                       ? "bg-cyan-500 hover:bg-cyan-700"
                       : "bg-cyan-300 cursor-not-allowed"
