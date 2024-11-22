@@ -20,7 +20,7 @@ const Home = () => {
               <div className="flex flex-col items-center space-y-4 p-6 rounded-md shadow-lg">
                 <img src={swirlingLogo} width={100} alt="" className="rounded-xl" />
                 <p className="text-md text-cyan-300 mb-4">Color Influence Simulator</p>
-                <h1 className="text-center text-2xl lg:text-4xl">
+                <h1 className="text-center text-xl lg:text-4xl">
                   Welcome to the Color Influence Simulator! Here you can explore
                   how colors and shapes affect your perception of yoghurt
                   flavour.
